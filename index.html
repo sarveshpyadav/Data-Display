@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Page</title>
+  </head>
+  <body>
+    <header>
+        <h1>Data Display</h1>
+    </header>
+
+    <div class="container">
+
+      <div class="data-item" data-testid="slackDisplayImage">
+        <img
+          src="./Images/Picture.jpg"
+          alt="Sarvesh's Profile Picture"
+        />
+      </div>
+
+      <div class="data-item" data-testid="slackUserName">
+        <span>Name :</span>
+        <p>Sarvesh Yadav</p>
+      </div>
+
+      <div class="data-item" data-testid="currentDayOfTheWeek">
+        <span>Current Day of the Week :</span>
+        <p id="currentDay"></p>
+      </div>
+
+      <div class="data-item" data-testid="currentUTCTime">
+        <span>Current UTC Time :</span>
+        <p id="currentUTC">{{ currentUTCTime }}</p>
+      </div>
+
+      <div class="data-item" data-testid="myTrack">
+        <span>Track :</span>
+        <p>Frontend</p>
+      </div>
+
+      <div class="github-url" data-testid="githubURL">
+        <a href="https://github.com/sarveshpyadav/Data-Display" target="_blank">
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
