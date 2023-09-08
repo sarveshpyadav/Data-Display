@@ -1,4 +1,4 @@
-# Data-Display
+# Data Display
 
 ## Description :
 
