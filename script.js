@@ -1,19 +1,19 @@
-function updateDateTime() { 
+function updateDayAndTime() {
+            
+    const currentDayOfWeek = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+    const currentUTCTime = document.querySelector('[data-testid="currentUTCTime"]');
 
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; // array
+    const today = new Date();
     
-    const currentDate = new Date(); // represent current date and time
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     
-    const currentDay = daysOfWeek[currentDate.getUTCDay()];
-        // retrieves current day as an index from 'Date' to get current day from 'daysOfWeek'
-    
-    const currentUTC = currentDate.getTime(); // represent current UTC time in milliseconds
+    const dayOfWeek = daysOfWeek[today.getDay()]; // retrieves current day as an index from 'Date' to get current day from 'daysOfWeek'
 
-    document.getElementById("currentDay").textContent = currentDay; 
     
-    document.getElementById("currentUTC").textContent = currentUTC;
-} 
+    currentDayOfWeek.textContent = dayOfWeek;
+    currentUTCTime.textContent = today.getTime(); // represent current UTC time in milliseconds
+}
 
-updateDateTime(); // calling the function once to display current day and UTC time
+updateDayAndTime(); // calling the function once to display current day and UTC time
 
-setInterval(updateDateTime, 1000); // timer to call the function every 1000 milliseconds (1 second)
+setInterval(updateDayAndTime, 1000); // timer to call the function every 1000 milliseconds (1 second)
