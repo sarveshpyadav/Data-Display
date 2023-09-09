@@ -19,35 +19,36 @@
 
     <div class="container">
 
-      <div class="data-item" data-testid="slackDisplayImage">
+      <div class="data-item">
         <img
           src="./Images/Picture.jpg"
           alt="Sarvesh's Profile Picture"
+          data-testid="slackDisplayImage"
         />
       </div>
 
-      <div class="data-item" data-testid="slackUserName">
+      <div class="data-item">
         <span>Name :</span>
-        <p>Sarvesh Yadav</p>
+        <p data-testid="slackUserName">Sarvesh Yadav</p>
       </div>
 
-      <div class="data-item" data-testid="currentDayOfTheWeek">
+      <div class="data-item">
         <span>Current Day of the Week :</span>
-        <p id="currentDay"></p>
+        <p id="currentDay" data-testid="currentDayOfTheWeek"></p>
       </div>
 
-      <div class="data-item" data-testid="currentUTCTime">
+      <div class="data-item">
         <span>Current UTC Time :</span>
-        <p id="currentUTC">{{ currentUTCTime }}</p>
+        <p id="currentUTC"  data-testid="currentUTCTime">{{ currentUTCTime }}</p>
       </div>
 
-      <div class="data-item" data-testid="myTrack">
+      <div class="data-item">
         <span>Track :</span>
-        <p>Frontend</p>
+        <p data-testid="myTrack">Frontend Development</p>
       </div>
 
-      <div class="github-url" data-testid="githubURL">
-        <a href="https://github.com/sarveshpyadav/Data-Display" target="_blank">
+      <div class="github-url">
+        <a href="https://github.com/sarveshpyadav/Data-Display" target="_blank"  data-testid="githubURL">
           <span>GitHub Repository</span>
         </a>
       </div>
