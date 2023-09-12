@@ -2,7 +2,7 @@
 
 ## Description :
 
-- This project is focused on the creating a dynamic and user-friendly web page using HTML, CSS and JavaSript.
+- This project is focused on the creating a dynamic and user-friendly web page using HTML, CSS and JavaScript.
 - The primary goal is to showcase specific personal and real-time data attributes while ensuring the accessiblility and testability of each element.
 
 ## Features :
